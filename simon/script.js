@@ -9,7 +9,7 @@ for (var i = 0; i < 5; i++) {
 alert(numeri);
 
 // timer 30 secondi
-setTimeout(memoria, 5000);
+setTimeout(memoria, 30000);
 
 var punteggio = [];
 
@@ -26,6 +26,8 @@ function memoria() {
     console.log("Sei proprio una schiappa, non hai indovinato nessun numero...Pa-pa-paaaaa");
   } else if (punteggio.length == 1) {
     console.log("Il tuo punteggio è " + punteggio.length + ". Hai indovinato solo questo numero " + punteggio + "!");
+  } else if (punteggio.length == 5) {
+    console.log("Wow! Hai indovinato tutti i numeri! Sei proprio un genio!:P");
   } else {
     console.log("Il tuo punteggio è " + punteggio.length + ". Hai indovinato questi numeri " + punteggio + "!");
   }
