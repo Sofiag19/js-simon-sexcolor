@@ -19,5 +19,11 @@ setTimeout(function () {
     }
     i++;
   }
-  console.log("Il tuo punteggio è " + punteggio.length + " perchè hai indovinato questi numeri " + punteggio);
+  if (punteggio.length == 0) {
+    console.log("Sei proprio una schiappa, non hai indovinato nessun numero...Pa-pa-paaaaa");
+  } else if (punteggio.length == 1) {
+    console.log("Il tuo punteggio è " + punteggio.length + ". Hai indovinato solo questo numero " + punteggio + "!");
+  } else {
+    console.log("Il tuo punteggio è " + punteggio.length + ". Hai indovinato questi numeri " + punteggio + "!");
+  }
 }, 30000);
