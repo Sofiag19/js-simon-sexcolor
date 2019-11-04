@@ -9,8 +9,11 @@ for (var i = 0; i < 5; i++) {
 alert(numeri);
 
 // timer 30 secondi
+setTimeout(memoria, 5000);
+
 var punteggio = [];
-setTimeout(function () {
+
+function memoria() {
   var i = 0;
   while (i < 5) {
     var numUtente = parseInt(prompt("Inserisci il numero che ti ricordi"));
@@ -26,4 +29,4 @@ setTimeout(function () {
   } else {
     console.log("Il tuo punteggio è " + punteggio.length + ". Hai indovinato questi numeri " + punteggio + "!");
   }
-}, 30000);
+}
